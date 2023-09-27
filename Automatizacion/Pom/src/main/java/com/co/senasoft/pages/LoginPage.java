@@ -12,12 +12,20 @@ public class LoginPage extends PageObject {
     By BTN_CLOSE = By.xpath("//button[@class='a83ed08757 c21c56c305 f38b6daa18 d691166b09 ab98298258 deab83296e f4552b6561']");
     // By BTN_LOGIN = By.xpath("//a[@class='a83ed08757 c21c56c305 bf0537ecb5 ab98298258 deab83296e af7297d90d js-header-login-link']");
     By BTN_LOGIN = By.xpath("//a[@aria-label='Iniciar sesión']");
-
     By BTN_NEXT = By.xpath("//button[@class='Iiab0gVMeWOd4XcyJGA3 wPxWIS_rJCpwAWksE0s3 Ut3prtt_wDsi7NM_83Jc TuDOVH9WFSdot9jLyXlw EJWUAldA4O1mP0SSFXPm whxYYRnvyHGyGqxO4ici']");
     By TXT_EMAIL = By.xpath("//input[@id='username']");
     By TXT_PASSWORD = By.xpath("//input[@id='password']");
-
     By BTN_FINAL = By.xpath("//button[@class='Iiab0gVMeWOd4XcyJGA3 wPxWIS_rJCpwAWksE0s3 Ut3prtt_wDsi7NM_83Jc TuDOVH9WFSdot9jLyXlw EJWUAldA4O1mP0SSFXPm whxYYRnvyHGyGqxO4ici']");
+
+    By VALIDATE_LOGIN = By.xpath("//h3[contains(text(),'¿Eres un robot?')]");
+
+    public By getVALIDATE_LOGIN() {
+        return VALIDATE_LOGIN;
+    }
+
+    public void setVALIDATE_LOGIN(By VALIDATE_LOGIN) {
+        this.VALIDATE_LOGIN = VALIDATE_LOGIN;
+    }
 
     public By getBTN_FINAL() {
         return BTN_FINAL;

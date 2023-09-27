@@ -2,6 +2,8 @@ package com.co.senasoft.steps;
 
 import com.co.senasoft.pages.LoginPage;
 import net.thucydides.core.annotations.Step;
+import org.hamcrest.Matchers;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
 
 import static org.yaml.snakeyaml.tokens.Token.ID.Key;
@@ -50,5 +52,11 @@ public class LoginStep {
     @Step
     public void aceptPasword(){
         loginPage.getDriver().findElement(loginPage.getBTN_FINAL()).click();
+    }
+
+    @Step
+    public void validateLogin(){
+        Assert.assertThat(loginPage.getDriver().findElement(loginPage.getVALIDATE_LOGIN())
+                .isDisplayed(),Matchers.is(true));
     }
 }

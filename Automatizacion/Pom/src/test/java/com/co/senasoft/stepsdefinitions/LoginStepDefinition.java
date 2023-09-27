@@ -33,8 +33,9 @@ public class LoginStepDefinition {
     @Then("he could see login")
     public void heCouldSeeLogin() {
         loginStep.aceptPasword();
+        loginStep.validateLogin();
         try {
-            Thread.sleep(8000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
