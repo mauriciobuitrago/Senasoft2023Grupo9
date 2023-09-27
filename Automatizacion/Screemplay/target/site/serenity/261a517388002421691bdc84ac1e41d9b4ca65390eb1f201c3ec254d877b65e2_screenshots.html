@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-09-2023 13:00</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-09-2023 17:38</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Book accommodation
+                                <span class="failing-color">Book accommodation
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -208,23 +208,83 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be present exception: Expected condition failed: waiting for By.xpath: //span[contains(text(),'Categor&iacute;a del alojamiento (m&aacute;s baja primero)')] to be present (tried for 5 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'LAPTOP-INOPPR5L', ip: '172.18.1.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.co.senasoft.tasks.ReserverAccommodationTask.performAs(ReserverAccommodationTask.java:16)<br />com.co.senasoft.stepsdefinition.ReserverAccommodationStepDefinition.theUserConsultationTheReservationToCarryOut(ReserverAccommodationStepDefinition.java:41)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //span[contains(text(),'Categoría del alojamiento (más baja primero)')] to be present (tried for 5 second(s) with 100 milliseconds interval)<br>Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'<br>System info: host: 'LAPTOP-INOPPR5L', ip: '172.18.1.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'<br>Driver info: driver.version: unknown</pre>
+                        <pre>com.co.senasoft.tasks.ReserverAccommodationTask.performAs(ReserverAccommodationTask.java :16)<br />com.co.senasoft.stepsdefinition.ReserverAccommodationStepDefinition.theUserConsultationTheReservationToCarryOut(ReserverAccommodationStepDefinition.java :41)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :57)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource16239232203980110378.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="6b386e908832b7ffce5f9327d17aa2d07ff3d62311d47c68a5f0578b0b1cfa03.png" title=" Given he user enter the web page" width="1295"/>
-                <img src="6b386e908832b7ffce5f9327d17aa2d07ff3d62311d47c68a5f0578b0b1cfa03.png" title=" vanessa opens the https://www.booking.com/" width="1295"/>
-                <img src="6b386e908832b7ffce5f9327d17aa2d07ff3d62311d47c68a5f0578b0b1cfa03.png" title=" Given he user enter the web page (completed)" width="1295"/>
-                <img src="0bd0b7e0fb878b242226e960dbaf37283c0fd2646d16bbd02bfa5cc0ed9d55b9.png" title=" When the user consultation the reservation to carry out" width="1295"/>
-                <img src="0bd0b7e0fb878b242226e960dbaf37283c0fd2646d16bbd02bfa5cc0ed9d55b9.png" title=" Vanessa reserver accommodation task" width="1295"/>
-                <img src="0bd0b7e0fb878b242226e960dbaf37283c0fd2646d16bbd02bfa5cc0ed9d55b9.png" title=" vanessa clicks on modal al ingresar a la pagina " width="1295"/>
-                <img src="0bd0b7e0fb878b242226e960dbaf37283c0fd2646d16bbd02bfa5cc0ed9d55b9.png" title=" vanessa enters 'Armenia' into lugar destino" width="1295"/>
-                <img src="f86bb8a88ca378d5c6d02a922515904e14f27151bea8f268e23e33302b15ce4e.png" title=" vanessa enters 'Armenia' into lugar destino (completed)" width="1295"/>
-                <img src="f86bb8a88ca378d5c6d02a922515904e14f27151bea8f268e23e33302b15ce4e.png" title=" vanessa clicks on lugar destino" width="1295"/>
-                <img src="de828818dec5f6e4cedacba409494f9159b3ae2d19d950ffd6d397ff97db6c60.png" title=" vanessa clicks on lugar destino (completed)" width="1295"/>
-                <img src="de828818dec5f6e4cedacba409494f9159b3ae2d19d950ffd6d397ff97db6c60.png" title=" vanessa clicks on boton de buscar" width="1295"/>
-                <img src="76752383ad110ad002f2eb4a502618b2a10ffd38ff37f73f2f07d70f4b1cf4f9.png" title=" vanessa clicks on boton de buscar (completed)" width="1295"/>
-                <img src="76752383ad110ad002f2eb4a502618b2a10ffd38ff37f73f2f07d70f4b1cf4f9.png" title=" Vanessa reserver accommodation task (completed)" width="1295"/>
-                <img src="76752383ad110ad002f2eb4a502618b2a10ffd38ff37f73f2f07d70f4b1cf4f9.png" title=" When the user consultation the reservation to carry out (completed)" width="1295"/>
-                <img src="76752383ad110ad002f2eb4a502618b2a10ffd38ff37f73f2f07d70f4b1cf4f9.png" title=" Then the user makes the reserve of the accommodation: <span class='success-color'>SUCCESS</span>" width="1295"/>
+                <img src="f7ae6c0b1731b4ef7f7d0fc50fd4d2ef036c728acb60d939e59146762b35efe5.png" title=" Given he user enter the web page" width="1920"/>
+                <img src="f7ae6c0b1731b4ef7f7d0fc50fd4d2ef036c728acb60d939e59146762b35efe5.png" title=" vanessa opens the https://www.booking.com/" width="1920"/>
+                <img src="f7ae6c0b1731b4ef7f7d0fc50fd4d2ef036c728acb60d939e59146762b35efe5.png" title=" Given he user enter the web page (completed)" width="1920"/>
+                <img src="f7ae6c0b1731b4ef7f7d0fc50fd4d2ef036c728acb60d939e59146762b35efe5.png" title=" When the user consultation the reservation to carry out" width="1920"/>
+                <img src="405c8b8bb676d15ee47a104a5c119fadbdab9d13ff382702d5c09b364e0adde3.png" title=" Vanessa reserver accommodation task" width="1920"/>
+                <img src="405c8b8bb676d15ee47a104a5c119fadbdab9d13ff382702d5c09b364e0adde3.png" title=" vanessa clicks on modal al ingresar a la pagina " width="1920"/>
+                <img src="f1c63f34fffd52c4a146fb60287499839cbfccab43ef401897a933a6b25a22c7.png" title=" vanessa clicks on modal al ingresar a la pagina  (completed)" width="1920"/>
+                <img src="09250a27449de78e919ba582a9f2c5af7b5e178831727e9cbcb37f2dc8d212d5.png" title=" vanessa clicks on Hotels " width="1920"/>
+                <img src="52fd876617fc50b6ba3ae844a4be509f9cad0dd27519dfcaa2e4f24d774c7c99.png" title=" vanessa clicks on Hotels  (completed)" width="1920"/>
+                <img src="52fd876617fc50b6ba3ae844a4be509f9cad0dd27519dfcaa2e4f24d774c7c99.png" title=" vanessa clicks on button login " width="1920"/>
+                <img src="a985e7c3f5ceba97ef7e4339ab9e60a1e3f286e516c73397d7033d9f59b6fedf.png" title=" vanessa clicks on button login  (completed)" width="1920"/>
+                <img src="a985e7c3f5ceba97ef7e4339ab9e60a1e3f286e516c73397d7033d9f59b6fedf.png" title=" vanessa enters 'Armenia' into lugar destino" width="1920"/>
+                <img src="6339aecbbc5d0a029d16ee1beab277ebfd82636b4d8b9d74ebd45f5950b4f670.png" title=" vanessa enters 'Armenia' into lugar destino (completed)" width="1920"/>
+                <img src="6339aecbbc5d0a029d16ee1beab277ebfd82636b4d8b9d74ebd45f5950b4f670.png" title=" vanessa clicks on filtro personas" width="1920"/>
+                <img src="08a80e043a73f8158659f40690611fe4e00e4042751df3b519877fd078ca2739.png" title=" vanessa clicks on filtro personas (completed)" width="1920"/>
+                <img src="08a80e043a73f8158659f40690611fe4e00e4042751df3b519877fd078ca2739.png" title=" vanessa clicks on personas" width="1920"/>
+                <img src="8e99bf53df4465fb476dc10a0008aa372cc1bbdd388db4676a60491b827c36ff.png" title=" vanessa clicks on personas (completed)" width="1920"/>
+                <img src="8e99bf53df4465fb476dc10a0008aa372cc1bbdd388db4676a60491b827c36ff.png" title=" vanessa clicks on boton de buscar" width="1920"/>
+                <img src="838c2625e631e36155bd5a66274944c54ca9e2eeee9fe28e865f4b9c6ca2a28f.png" title=" vanessa clicks on boton de buscar (completed)" width="1920"/>
+                <img src="973062bf1fa8c778bc5aac44bfdec63cb4d87244fda3ab2cba7ef7328a9c5745.png" title=" vanessa clicks on estrellas" width="1920"/>
+                <img src="af2a480cfe306fe1caf4525ea54659493370487de542164e34fd95c4988bba0b.png" title=" vanessa clicks on estrellas (completed)" width="1920"/>
+                <img src="af2a480cfe306fe1caf4525ea54659493370487de542164e34fd95c4988bba0b.png" title=" vanessa clicks on price" width="1920"/>
+                <img src="3aee8bb2457f18995e1f3c77419da674b6c040eb224597cd7b52a55332cc9843.png" title=" vanessa clicks on price (completed)" width="1920"/>
+                <img src="3aee8bb2457f18995e1f3c77419da674b6c040eb224597cd7b52a55332cc9843.png" title=" vanessa clicks on modal currency" width="1920"/>
+                <img src="a97ac5cfc59ff229698211ea6ec8f219a384a8f7cd31c915fdc97b3c39ebaad7.png" title=" vanessa clicks on modal currency (completed)" width="1920"/>
+                <img src="a97ac5cfc59ff229698211ea6ec8f219a384a8f7cd31c915fdc97b3c39ebaad7.png" title=" vanessa clicks on price" width="1920"/>
+                <img src="377a86a185f39a07e9bb684c4a387589ec1bd9e7a448d8fb08773d0a5fe9c290.png" title=" vanessa clicks on price (completed)" width="1920"/>
+                <img src="377a86a185f39a07e9bb684c4a387589ec1bd9e7a448d8fb08773d0a5fe9c290.png" title=" vanessa clicks on lowest price " width="1920"/>
+                <img src="b39cf29ef5850259b32340b2eef4dbdac8a319be194173f89962854a550a9819.png" title=" vanessa clicks on lowest price  (completed): <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 
