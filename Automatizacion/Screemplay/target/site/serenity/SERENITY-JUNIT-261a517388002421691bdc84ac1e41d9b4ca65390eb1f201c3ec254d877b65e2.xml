@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Book accommodation without login" skipped="0" tests="1" time="33.96" timestamp="2023-09-27 05:38:14"><testcase name="Book accommodation"><failure message="Expected condition failed: waiting for By.xpath: //span[contains(text(),'Categoría del alojamiento (más baja primero)')] to be present (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-INOPPR5L', ip: '172.18.1.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException">Expected condition failed: waiting for By.xpath: //span[contains(text(),'Categoría del alojamiento (más baja primero)')] to be present (tried for 5 second(s) with 100 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-INOPPR5L', ip: '172.18.1.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
@@ -23,3 +24,6 @@ io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)&#13;
 io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)&#13;
 io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)&#13;
 </system-err></testcase></testsuite>
+=======
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Book accommodation without login" skipped="1" tests="1" time="0.26" timestamp="2023-09-27 04:13:43"><testcase name="Book accommodation"><skipped/></testcase></testsuite>
+>>>>>>> ca0e81dacdd6cec6679da334349548172d3971dd
