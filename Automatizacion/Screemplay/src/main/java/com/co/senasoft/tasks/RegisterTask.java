@@ -16,7 +16,7 @@ public class RegisterTask implements Task {
         OnStage.theActorInTheSpotlight().attemptsTo(
                 Click.on(RegisterPage.BTN_MODAL_HOME),
                 Click.on(RegisterPage.BTN_REGISTER),
-                Enter.theValue("prueasena2@gmail.com").into(RegisterPage.LBL_USERNAME),
+                Enter.theValue("prueasena3@gmail.com").into(RegisterPage.LBL_USERNAME),
                 Click.on(RegisterPage.BTN_NEXT),
                 Enter.theValue("Sena1234567").into((RegisterPage.LBL_NEWPASSWORD)),
                 Enter.theValue("Sena1234567").into((RegisterPage.LBL_CONFIRMPASSWORD)),
