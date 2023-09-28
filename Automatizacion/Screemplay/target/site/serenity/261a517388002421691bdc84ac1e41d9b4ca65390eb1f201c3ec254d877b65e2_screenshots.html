@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="e7bdcfd6716c3ea29e6d8914b687fb4ff27e544f52db7c232c6f1b9dd739f456.html">Book Accommodation Without Login</a></span>
+                > <span class="truncate-60"><a
+                    href="261a517388002421691bdc84ac1e41d9b4ca65390eb1f201c3ec254d877b65e2.html">Book accommodation </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 11:08</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Book Accommodation Without Login </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                he user wants to make an accommodation reservation
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Book accommodation
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="8363e9429f6839328b3945da56e9d802c0d1590a8c43d51e349a51572ed61bd8.png" title=" Given he user enter the web page" width="1920"/>
+                <img src="8363e9429f6839328b3945da56e9d802c0d1590a8c43d51e349a51572ed61bd8.png" title=" Mauro opens the https://www.booking.com/" width="1920"/>
+                <img src="8363e9429f6839328b3945da56e9d802c0d1590a8c43d51e349a51572ed61bd8.png" title=" Given he user enter the web page (completed)" width="1920"/>
+                <img src="a99fd4b017665fca98349704680883b7b2ef499cf699b742fa0eda2cfdd1f3a8.png" title=" When the user consultation the reservation to carry out" width="1920"/>
+                <img src="a99fd4b017665fca98349704680883b7b2ef499cf699b742fa0eda2cfdd1f3a8.png" title=" Mauro home" width="1920"/>
+                <img src="a99fd4b017665fca98349704680883b7b2ef499cf699b742fa0eda2cfdd1f3a8.png" title=" Mauro clicks on modal al ingresar a la pagina " width="1920"/>
+                <img src="fcb6a21e4e9a242b33dc0cdddf10f6804667af57034e7e7e1a233ff6e9ed0e1f.png" title=" Mauro clicks on Hotels " width="1920"/>
+                <img src="24398b41afdd0c5069ce48f66a496f8d46f8c069868da579dbf5f79d8ddb1720.png" title=" Mauro clicks on Hotels  (completed)" width="1920"/>
+                <img src="24398b41afdd0c5069ce48f66a496f8d46f8c069868da579dbf5f79d8ddb1720.png" title=" Mauro clicks on button login " width="1920"/>
+                <img src="b3c42b7d672df526bbc68427dd865eb6650ee8f44f15ae01e8399b659c204105.png" title=" Mauro clicks on button login  (completed)" width="1920"/>
+                <img src="b3c42b7d672df526bbc68427dd865eb6650ee8f44f15ae01e8399b659c204105.png" title=" Mauro home (completed)" width="1920"/>
+                <img src="b3c42b7d672df526bbc68427dd865eb6650ee8f44f15ae01e8399b659c204105.png" title=" Mauro hotels" width="1920"/>
+                <img src="b3c42b7d672df526bbc68427dd865eb6650ee8f44f15ae01e8399b659c204105.png" title=" Mauro enters 'Armenia' into destination place" width="1920"/>
+                <img src="eb3c7423cb0bbf278ad4e5d7168a2db743983b327382869b0d4573896d89b7a0.png" title=" Mauro enters 'Armenia' into destination place (completed)" width="1920"/>
+                <img src="eb3c7423cb0bbf278ad4e5d7168a2db743983b327382869b0d4573896d89b7a0.png" title=" Mauro clicks on button date checkout" width="1920"/>
+                <img src="196aca814ec520828e71311d5b09813ca5c36649acf69a5f03b25ba7ed112fc7.png" title=" Mauro clicks on button date checkout (completed)" width="1920"/>
+                <img src="196aca814ec520828e71311d5b09813ca5c36649acf69a5f03b25ba7ed112fc7.png" title=" Mauro clicks on filter person" width="1920"/>
+                <img src="bdc1d7cf8a6265ef8b1c55783ada98d4351c089356b847eb3d2a76078666de34.png" title=" Mauro clicks on filter person (completed)" width="1920"/>
+                <img src="bdc1d7cf8a6265ef8b1c55783ada98d4351c089356b847eb3d2a76078666de34.png" title=" Mauro clicks on Button quanty adults" width="1920"/>
+                <img src="89865922c608dca02e6195ac70ae4cbc49a50f7e2d2dae3d0fca0c2f077f8664.png" title=" Mauro clicks on Button quanty adults (completed)" width="1920"/>
+                <img src="89865922c608dca02e6195ac70ae4cbc49a50f7e2d2dae3d0fca0c2f077f8664.png" title=" Mauro clicks on Button quanty children" width="1920"/>
+                <img src="a1eab9922316d940dea32df2849888d9d2de564ee912036b4df8f1d1efe25596.png" title=" Mauro clicks on Button quanty children (completed)" width="1920"/>
+                <img src="a1eab9922316d940dea32df2849888d9d2de564ee912036b4df8f1d1efe25596.png" title=" Mauro clicks on Button bedroom" width="1920"/>
+                <img src="45880cc132d5868e86b2b5a7830acc485a3c82d2a3b24906834c22f3f7e606de.png" title=" Mauro clicks on Button bedroom (completed)" width="1920"/>
+                <img src="45880cc132d5868e86b2b5a7830acc485a3c82d2a3b24906834c22f3f7e606de.png" title=" Mauro clicks on  button of search" width="1920"/>
+                <img src="7b0eb2ac25de6a0b70b5580c1636bb3cb16911a8a20ab437c9daf00b9ce9c8e8.png" title=" Mauro clicks on  button of search (completed)" width="1920"/>
+                <img src="7b0eb2ac25de6a0b70b5580c1636bb3cb16911a8a20ab437c9daf00b9ce9c8e8.png" title=" Mauro hotels (completed)" width="1920"/>
+                <img src="7b0eb2ac25de6a0b70b5580c1636bb3cb16911a8a20ab437c9daf00b9ce9c8e8.png" title=" Mauro find accommodation" width="1920"/>
+                <img src="e08f881c3ddfff0e04d2c446b9c098b3d19005bbc2a85eaffda2b2e2d4ae6ebf.png" title=" Mauro clicks on estrellas" width="1920"/>
+                <img src="7eb26e99af4b59bea6be9bfb900755e9b4ecd3d8dac661c45093c7f5da2f671d.png" title=" Mauro clicks on estrellas (completed)" width="1920"/>
+                <img src="7eb26e99af4b59bea6be9bfb900755e9b4ecd3d8dac661c45093c7f5da2f671d.png" title=" Mauro clicks on price" width="1920"/>
+                <img src="b4de6d8ba4aea50e806932e6158a1aa58340aa1be97d37afcc8e9d559cba493a.png" title=" Mauro clicks on price (completed)" width="1920"/>
+                <img src="b4de6d8ba4aea50e806932e6158a1aa58340aa1be97d37afcc8e9d559cba493a.png" title=" Mauro clicks on lowest price " width="1920"/>
+                <img src="cb6a89a4bbf667ba572d35ceca24340b9a39f2521b042933075e694dfc7262cd.png" title=" Mauro clicks on lowest price  (completed)" width="1920"/>
+                <img src="cb6a89a4bbf667ba572d35ceca24340b9a39f2521b042933075e694dfc7262cd.png" title=" Mauro find accommodation (completed)" width="1920"/>
+                <img src="494ac4752f8223181e84a008eefa1d3c50910770886136c340a7b706a3a72e1f.png" title=" When the user consultation the reservation to carry out (completed)" width="1920"/>
+                <img src="494ac4752f8223181e84a008eefa1d3c50910770886136c340a7b706a3a72e1f.png" title=" Then the user makes the reserve of the accommodation: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.4.34</span>
+</div>
+</body>
+</html>
