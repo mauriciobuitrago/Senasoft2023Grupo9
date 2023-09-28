@@ -52,7 +52,7 @@ public class FindAccommodationStepDefinition {
     }
     @Then("the user makes the reserve of the accommodation")
     public void theUserMakesTheReserveOfTheAccommodation() {
-
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidationFindAccommodation.validationFindAccommodation(), Matchers.is("alojamientos encontrados")));
     }
 
 
