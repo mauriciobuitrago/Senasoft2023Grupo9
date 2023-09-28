@@ -1,6 +1,6 @@
 package com.co.senasoft.stepsdefinition;
 
-import com.co.senasoft.tasks.RegisterTask;
+import com.co.senasoft.tasks.Register;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -30,7 +30,7 @@ public class RegisterStepDefinition {
     }
     @When("he user select register")
     public void heUserSelectRegister() {
-        OnStage.theActorInTheSpotlight().attemptsTo(RegisterTask.registertask());
+        OnStage.theActorInTheSpotlight().attemptsTo(Register.registertask());
 
         try {
             Thread.sleep(3000);
