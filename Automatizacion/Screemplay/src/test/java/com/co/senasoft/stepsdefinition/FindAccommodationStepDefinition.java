@@ -26,8 +26,8 @@ public class FindAccommodationStepDefinition {
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
     }
 
-    @Given("he user enter the web page")
-    public void heUserEnterTheWebPage() {
+    @Given("the user will search for information about accommodations")
+    public void theUserWillSearchForInformationAboutAccommodations() {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.booking.com/"));
 
 

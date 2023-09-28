@@ -10,6 +10,6 @@ public class FindAccommodationPage {
     public static final Target BTN_PRICE = Target.the("price").locatedBy("//button[@data-testid='sorters-dropdown-trigger']");
 
     public static final Target BTN_PRICE_LOWEST = Target.the("lowest price ").locatedBy("//span[contains(text(),'Categoría del alojamiento (más baja primero)')]");
-    public static final Target BTN_RESERVE = Target.the(" button of reserve").locatedBy("(//img[@class='b8b0793b0e'])[1]");
+    public static final Target LBL_ACCOMMODATION = Target.the(" button of reserve").locatedBy("(//*[contains(text(),'alojamientos encontrados')])[1]");
 
 }

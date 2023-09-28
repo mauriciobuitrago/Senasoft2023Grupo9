@@ -14,8 +14,7 @@ public class FindAccommodation implements Task {
                 Scroll.to(FindAccommodationPage.LBL_CATEGORY_STAR),
                 Click.on(FindAccommodationPage.BTN_STARS),
                 Click.on(FindAccommodationPage.BTN_PRICE),
-                Click.on(FindAccommodationPage.BTN_PRICE_LOWEST),
-                Click.on(FindAccommodationPage.BTN_RESERVE)
+                Click.on(FindAccommodationPage.BTN_PRICE_LOWEST)
         );
 
     }
